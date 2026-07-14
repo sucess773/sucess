@@ -120,3 +120,28 @@ footer{
 .card button:hover{
     background:#fff;
 }
+.buscador{
+
+width:90%;
+
+max-width:600px;
+
+margin:40px auto;
+
+}
+
+.buscador input{
+
+width:100%;
+
+padding:16px;
+
+border-radius:10px;
+
+border:none;
+
+font-size:18px;
+
+outline:none;
+
+}
