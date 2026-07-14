@@ -1,0 +1,77 @@
+const productos = [
+
+{
+nombre:"Panini Mundial 2026",
+precio:2,
+imagen:"assets/productos/panini1.jpg"
+},
+
+{
+nombre:"Panini Qatar",
+precio:2,
+imagen:"assets/productos/panini2.jpg"
+},
+
+{
+nombre:"Tres Reyes Liga 1",
+precio:1.5,
+imagen:"assets/productos/tresreyes1.jpg"
+},
+
+{
+nombre:"Tres Reyes Copa América",
+precio:2,
+imagen:"assets/productos/tresreyes2.jpg"
+}
+
+];
+
+const contenedor=document.getElementById("productos");
+
+function mostrar(lista){
+
+contenedor.innerHTML="";
+
+lista.forEach(p=>{
+
+contenedor.innerHTML+=`
+
+<div class="producto">
+
+<img src="${p.imagen}">
+
+<div class="info">
+
+<h3>${p.nombre}</h3>
+
+<div class="precio">
+S/ ${p.precio}
+</div>
+
+<button>
+Agregar al carrito
+</button>
+
+</div>
+
+</div>
+
+`;
+
+});
+
+}
+
+mostrar(productos);
+
+document.getElementById("buscador").addEventListener("keyup",e=>{
+
+const texto=e.target.value.toLowerCase();
+
+mostrar(productos.filter(p=>
+
+p.nombre.toLowerCase().includes(texto)
+
+));
+
+});
