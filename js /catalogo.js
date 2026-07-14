@@ -48,7 +48,7 @@ contenedor.innerHTML+=`
 S/ ${p.precio}
 </div>
 
-<button>
+<button onclick="agregarAlCarrito('${p.nombre}', ${p.precio}, '${p.imagen}')">
 Agregar al carrito
 </button>
 
