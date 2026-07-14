@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carrito | SUCESS</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+main{
+max-width:900px;
+margin:40px auto;
+padding:20px;
+}
+
+.item{
+display:flex;
+align-items:center;
+gap:20px;
+padding:15px;
+border-bottom:1px solid #ddd;
+}
+
+.item img{
+width:80px;
+height:80px;
+object-fit:cover;
+border-radius:8px;
+}
+
+.total{
+font-size:24px;
+font-weight:bold;
+margin-top:30px;
+}
+
+button{
+margin-top:20px;
+padding:12px 20px;
+cursor:pointer;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+
+<div class="logo">
+<a href="index.html">
+<img src="assets/logo.png" alt="SUCESS">
+</a>
+</div>
+
+<nav>
+<a href="index.html">Inicio</a>
+<a href="catalogo.html">Catálogo</a>
+<a href="carrito.html">Carrito</a>
+</nav>
+
+</header>
+
+<main>
+
+<h1>Mi carrito</h1>
+
+<div id="lista"></div>
+
+<div class="total" id="total"></div>
+
+<button onclick="vaciar()">Vaciar carrito</button>
+
+</main>
+
+<script src="js/carrito.js"></script>
+
+<script>
+const lista=document.getElementById("lista");
+const total=document.getElementById("total");
+
+function cargar(){
+
+const carrito=obtenerCarrito();
+
+lista.innerHTML="";
+
+let suma=0;
+
+carrito.forEach(p=>{
+
+suma+=Number(p.precio);
+
+lista.innerHTML+=`
+<div class="item">
+<img src="${p.imagen}">
+<div>
+<h3>${p.nombre}</h3>
+<p>S/ ${p.precio}</p>
+</div>
+</div>
+`;
+
+});
+
+total.textContent="Total: S/ "+suma.toFixed(2);
+
+}
+
+function vaciar(){
+
+vaciarCarrito();
+
+cargar();
+
+}
+
+cargar();
+</script>
+
+</body>
+</html>
