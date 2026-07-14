@@ -1,25 +1,32 @@
-const buscador=document.getElementById("buscar");
+document.addEventListener("DOMContentLoaded", () => {
 
-buscador.addEventListener("keyup",()=>{
+    const contenedor = document.querySelector(".cards");
 
-let texto=buscador.value.toLowerCase();
+    if (!contenedor || typeof productos === "undefined") return;
 
-let cards=document.querySelectorAll(".card");
+    contenedor.innerHTML = "";
 
-cards.forEach(card=>{
+    productos.forEach(producto => {
 
-let nombre=card.innerText.toLowerCase();
+        contenedor.innerHTML += `
+            <div class="card">
+                <img src="${producto.imagen}" alt="${producto.nombre}">
+                <h3>${producto.nombre}</h3>
+                <p class="precio">S/ ${producto.precio.toFixed(2)}</p>
 
-if(nombre.includes(texto)){
+                <button onclick="agregarCarrito('${producto.nombre}')">
+                    Agregar al carrito
+                </button>
 
-card.style.display="block";
+            </div>
+        `;
 
-}else{
+    });
 
-card.style.display="none";
+});
+
+function agregarCarrito(nombre){
+
+    alert(nombre + " agregado al carrito.");
 
 }
-
-});
-
-});
