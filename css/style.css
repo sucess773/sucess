@@ -92,3 +92,31 @@ footer{
 .whatsapp:hover{
     transform:scale(1.1);
 }
+.card img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+.precio{
+    color:#FFD700;
+    font-size:22px;
+    font-weight:bold;
+    margin:15px 0;
+}
+
+.card button{
+    width:100%;
+    padding:14px;
+    border:none;
+    background:#FFD700;
+    color:#000;
+    font-weight:bold;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.card button:hover{
+    background:#fff;
+}
