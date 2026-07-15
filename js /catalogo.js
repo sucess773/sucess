@@ -42,6 +42,7 @@ contenedor.innerHTML += `
 <img src="${p.imagen}" alt="${p.nombre}">
 <div class="info">
 <h3>${p.nombre}</h3>
+<p class="categoria">${p.categoria}</p>
 <div class="precio">S/ ${p.precio}</div>
 
 <button onclick="agregarAlCarrito('${p.nombre}', ${p.precio}, '${p.imagen}')">
