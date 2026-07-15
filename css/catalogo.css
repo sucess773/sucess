@@ -286,3 +286,52 @@ border-color:#d62828;
 box-shadow:0 10px 35px rgba(214,40,40,.25);
 
 }
+/*=========================
+  FILTROS
+=========================*/
+
+.filtros{
+
+display:flex;
+
+justify-content:center;
+
+gap:15px;
+
+margin-bottom:35px;
+
+flex-wrap:wrap;
+
+}
+
+.filtro{
+
+background:#111;
+
+color:white;
+
+padding:12px 25px;
+
+border:none;
+
+border-radius:40px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.filtro:hover{
+
+background:#d62828;
+
+}
+
+.filtro.activo{
+
+background:#f5c04a;
+
+color:black;
+
+}
