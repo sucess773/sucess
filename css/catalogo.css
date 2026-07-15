@@ -335,3 +335,26 @@ background:#f5c04a;
 color:black;
 
 }
+.categoria{
+
+display:inline-block;
+
+background:#f5c04a;
+
+color:#111;
+
+padding:6px 14px;
+
+border-radius:20px;
+
+font-size:13px;
+
+font-weight:700;
+
+margin:8px 0 15px;
+
+text-transform:uppercase;
+
+letter-spacing:.5px;
+
+}
