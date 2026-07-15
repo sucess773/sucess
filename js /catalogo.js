@@ -75,7 +75,9 @@ const filtros = document.querySelectorAll(".filtro");
 filtros.forEach(boton => {
 
 boton.addEventListener("click", () => {
+filtros.forEach(b=>b.classList.remove("activo"));
 
+boton.classList.add("activo");
 const categoria = boton.dataset.categoria;
 
 if(categoria==="Todos"){
