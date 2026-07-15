@@ -1,4 +1,4 @@
-let productos = JSON.parse(localStorage.getItem("productos"));
+let productos = null;
 
 if (!productos) {
   productos = [
