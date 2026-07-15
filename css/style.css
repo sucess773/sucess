@@ -145,3 +145,50 @@ font-size:18px;
 outline:none;
 
 }
+/* HERO */
+
+.hero{
+    background: linear-gradient(135deg,#000000,#1b1b1b);
+    color:white;
+    text-align:center;
+    padding:90px 20px;
+}
+
+.hero h1{
+    font-size:55px;
+    color:#f5c04a;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:22px;
+    color:#d8d8d8;
+    margin-bottom:35px;
+}
+
+.boton{
+    display:inline-block;
+    background:#d62828;
+    color:white;
+    padding:15px 35px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.boton:hover{
+    background:#f5c04a;
+    color:black;
+}
+
+/* TARJETAS */
+
+.card{
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
