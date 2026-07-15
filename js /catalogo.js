@@ -47,6 +47,7 @@ contenedor.innerHTML += `
 <p class="${p.stock ? 'disponible' : 'agotado'}">
 ${p.stock ? '✅ Disponible' : '❌ Agotado'}
 </p>
+${p.nuevo ? '<span class="nuevo">NUEVO</span>' : ''}
 <p class="categoria">${p.categoria}</p>
 <div class="precio">S/ ${p.precio}</div>
 
