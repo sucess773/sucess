@@ -1,4 +1,8 @@
-const productos = [
+let productos = JSON.parse(localStorage.getItem("productos"));
+
+if(!productos){
+
+productos = [
 {
 id:1,
 nombre:"Panini Mundial 2026",
