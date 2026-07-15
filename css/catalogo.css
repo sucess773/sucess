@@ -46,16 +46,31 @@ gap:25px;
 
 .producto{
 
-background:#fff;
+background:#ffffff;
 
-border-radius:18px;
+border-radius:20px;
 
 overflow:hidden;
 
-box-shadow:0 10px 20px rgba(0,0,0,.1);
+border:2px solid transparent;
 
-transition:.3s;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
 
+transition:all .35s ease;
+
+cursor:pointer;
+
+}
+
+.producto:hover{
+
+transform:translateY(-10px);
+
+border-color:#f5c04a;
+
+box-shadow:0 20px 45px rgba(0,0,0,.25);
+
+}
 }
 
 .producto:hover{
