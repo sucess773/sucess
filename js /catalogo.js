@@ -14,7 +14,9 @@ precio:2,
 imagen:"assets/productos/panini2.jpg"
 },
 {
+id:3,
 nombre:"Tres Reyes Liga 1",
+categoria:"Tres Reyes",
 precio:1.5,
 imagen:"assets/productos/tresreyes1.jpg"
 },
