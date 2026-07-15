@@ -61,15 +61,17 @@ let productosActuales = productos;
 
 mostrar(productosActuales);
 
-document.getElementById("buscador").addEventListener("keyup",function(e){
+document.getElementById("buscador").addEventListener("keyup",e=>{
 
 const texto=e.target.value.toLowerCase();
 
-mostrar(productos.filter(function(p){
+const resultado = productosActuales.filter(p=>
 
-return p.nombre.toLowerCase().includes(texto);
+p.nombre.toLowerCase().includes(texto)
 
-}));
+);
+
+mostrar(resultado);
 
 });
 const filtros = document.querySelectorAll(".filtro");
