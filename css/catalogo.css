@@ -420,3 +420,66 @@ margin-bottom:12px;
 box-shadow:0 4px 10px rgba(245,192,74,.4);
 
 }
+/*=========== CATÁLOGO ===========*/
+
+.contenedor-catalogo{
+
+display:grid;
+
+grid-template-columns:260px 1fr;
+
+gap:30px;
+
+}
+
+.sidebar{
+
+background:#fff;
+
+padding:20px;
+
+border-radius:15px;
+
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+height:max-content;
+
+}
+
+.sidebar h3{
+
+margin-bottom:20px;
+
+}
+
+.sidebar ul{
+
+list-style:none;
+
+padding:0;
+
+margin:0;
+
+}
+
+.sidebar li{
+
+padding:12px;
+
+border-radius:10px;
+
+cursor:pointer;
+
+transition:.3s;
+
+margin-bottom:8px;
+
+}
+
+.sidebar li:hover{
+
+background:#d62828;
+
+color:white;
+
+}
