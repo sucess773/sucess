@@ -43,6 +43,9 @@ contenedor.innerHTML += `
 <img src="${p.imagen}" alt="${p.nombre}">
 <div class="info">
 <h3>${p.nombre}</h3>
+<p class="${p.stock ? 'disponible' : 'agotado'}">
+${p.stock ? '✅ Disponible' : '❌ Agotado'}
+</p>
 <p class="categoria">${p.categoria}</p>
 <div class="precio">S/ ${p.precio}</div>
 
