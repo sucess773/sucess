@@ -70,3 +70,24 @@ return p.nombre.toLowerCase().includes(texto);
 }));
 
 });
+const filtros = document.querySelectorAll(".filtro");
+
+filtros.forEach(boton => {
+
+boton.addEventListener("click", () => {
+
+const categoria = boton.dataset.categoria;
+
+if(categoria==="Todos"){
+
+mostrar(productos);
+
+}else{
+
+mostrar(productos.filter(p=>p.categoria===categoria));
+
+}
+
+});
+
+});
