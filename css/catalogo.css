@@ -247,3 +247,42 @@ grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:35px;
 
 }
+/*=========================
+  BARRA DE BÚSQUEDA
+=========================*/
+
+#buscador{
+
+width:100%;
+
+max-width:700px;
+
+margin:0 auto 40px;
+
+display:block;
+
+padding:18px 25px;
+
+font-size:18px;
+
+background:#fff;
+
+border:2px solid #ececec;
+
+border-radius:50px;
+
+outline:none;
+
+transition:.3s;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+#buscador:focus{
+
+border-color:#d62828;
+
+box-shadow:0 10px 35px rgba(214,40,40,.25);
+
+}
