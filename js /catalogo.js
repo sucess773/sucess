@@ -1,6 +1,8 @@
 const productos = [
 {
+id:1,
 nombre:"Panini Mundial 2026",
+categoria:"Panini",
 precio:2,
 imagen:"assets/productos/panini1.jpg"
 },
