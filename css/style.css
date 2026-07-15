@@ -544,3 +544,50 @@ transform:translateY(-3px);
 margin-top:4px;
 
 }
+/*=========================
+RESPONSIVE
+=========================*/
+
+@media (min-width:768px){
+
+.menu-movil{
+
+display:none;
+
+}
+
+}
+
+@media (max-width:767px){
+
+nav{
+
+display:none;
+
+}
+
+header{
+
+justify-content:center;
+
+}
+
+body{
+
+padding-bottom:80px;
+
+}
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+}
