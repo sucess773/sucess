@@ -86,13 +86,15 @@ const categoria = boton.dataset.categoria;
 
 if(categoria==="Todos"){
 
-mostrar(productos);
+productosActuales = productos;
 
 }else{
 
-mostrar(productos.filter(p=>p.categoria===categoria));
+productosActuales = productos.filter(p=>p.categoria===categoria);
 
 }
+
+mostrar(productosActuales);
 
 });
 
