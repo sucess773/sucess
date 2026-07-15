@@ -4,6 +4,7 @@ id:1,
 nombre:"Panini Mundial 2026",
 categoria:"Panini",
 stock:true,
+nuevo:true,
 precio:2,
 imagen:"assets/productos/panini1.jpg"
 },
