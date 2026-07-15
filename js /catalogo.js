@@ -55,7 +55,7 @@ function mostrar(lista) {
     contenedor.innerHTML += `
       <div class="producto">
 
-        <img src="${p.imagen}" alt="${p.nombre}">
+       <img src="https://placehold.co/300x300?text=SUCESS" alt="${p.nombre}">
 
         <div class="info">
 
