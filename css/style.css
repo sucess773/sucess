@@ -444,3 +444,38 @@ color:#111;
 }
 /*=========================
 BOT
+.whatsapp img{
+
+width:35px;
+
+height:35px;
+
+}
+
+.whatsapp{
+
+animation:flotar 2s infinite;
+
+}
+
+@keyframes flotar{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-8px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
