@@ -145,3 +145,84 @@ button:hover{
 background:#0b8d37;
 
 }
+/* ===== FONDO DEL CATÁLOGO ===== */
+
+.catalogo{
+
+background:#f4f4f4;
+
+min-height:100vh;
+
+padding:60px 40px;
+
+}
+
+/* ===== TÍTULO ===== */
+
+.catalogo h1{
+
+font-size:48px;
+
+text-align:center;
+
+color:#111;
+
+margin-bottom:15px;
+
+}
+
+.catalogo p{
+
+text-align:center;
+
+color:#666;
+
+margin-bottom:40px;
+
+}
+
+/* ===== BUSCADOR ===== */
+
+#buscador{
+
+width:100%;
+
+max-width:650px;
+
+margin:0 auto 50px;
+
+display:block;
+
+padding:18px 25px;
+
+font-size:17px;
+
+border:none;
+
+border-radius:50px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+outline:none;
+
+transition:.3s;
+
+}
+
+#buscador:focus{
+
+box-shadow:0 10px 35px rgba(245,192,74,.45);
+
+}
+
+/* ===== GRID ===== */
+
+.grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:35px;
+
+}
