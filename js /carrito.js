@@ -1,5 +1,11 @@
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+window.addEventListener("load",()=>{
 
+carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+actualizarContador();
+
+});
 function agregarAlCarrito(nombre, precio, imagen) {
 
     carrito.push({
