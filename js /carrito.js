@@ -9,7 +9,7 @@ function agregarAlCarrito(nombre, precio, imagen) {
     });
 
     localStorage.setItem("carrito", JSON.stringify(carrito));
-
+    actualizarContador();
     alert("Producto agregado al carrito");
 }
 
@@ -21,3 +21,16 @@ function vaciarCarrito() {
     carrito = [];
     localStorage.removeItem("carrito");
 }
+function actualizarContador(){
+
+const contador = document.getElementById("contador");
+
+if(contador){
+
+contador.textContent = carrito.length;
+
+}
+
+}
+
+actualizarContador();
