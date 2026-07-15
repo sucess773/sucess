@@ -57,7 +57,9 @@ Agregar al carrito
 
 }
 
-mostrar(productos);
+let productosActuales = productos;
+
+mostrar(productosActuales);
 
 document.getElementById("buscador").addEventListener("keyup",function(e){
 
