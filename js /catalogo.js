@@ -1,5 +1,6 @@
-let productos = null;
+localStorage.removeItem("productos");
 
+let productos = JSON.parse(localStorage.getItem("productos"));
 if (!productos) {
   productos = [
     {
