@@ -51,6 +51,10 @@ ${p.nuevo ? '<span class="nuevo">NUEVO</span>' : ''}
 <p class="categoria">${p.categoria}</p>
 <div class="precio">S/ ${p.precio}</div>
 
+<button onclick="location.href='producto.html'">
+Ver detalles
+</button>
+
 <button onclick="agregarAlCarrito('${p.nombre}', ${p.precio}, '${p.imagen}')">
 Agregar al carrito
 </button>
