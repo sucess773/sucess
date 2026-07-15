@@ -21,7 +21,9 @@ precio:1.5,
 imagen:"assets/productos/tresreyes1.jpg"
 },
 {
+id:4,
 nombre:"Tres Reyes Copa América",
+categoria:"Tres Reyes",
 precio:2,
 imagen:"assets/productos/tresreyes2.jpg"
 }
