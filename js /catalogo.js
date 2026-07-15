@@ -7,7 +7,9 @@ precio:2,
 imagen:"assets/productos/panini1.jpg"
 },
 {
+id:2,
 nombre:"Panini Qatar",
+categoria:"Panini",
 precio:2,
 imagen:"assets/productos/panini2.jpg"
 },
